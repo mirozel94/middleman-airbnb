@@ -1,8 +1,16 @@
-<ul class="list-inline text-center">
-  <% ["mirozel94", "mautret"].each do |gh_username| %>
-    <li>
-      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
-      <h3><%= gh_username.capitalize %></h3>
-    </li>
-  <% end %>
-</ul>
+<div id="team">
+  <div class="team-content">
+    <h1>This template was built with <i class="fa fa-heart" aria-hidden="true"></i>
+ by</h1>
+    <ul class="list-inline text-center">
+      <% data.users.each do |user| %>
+        <li>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
+          <h3><%= user.name.capitalize %></h3>
+          <a href="#"><i class="fa fa-github" aria-hidden="true"></i>
+<%= user.github_nickname %></a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

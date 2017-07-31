@@ -1,0 +1,29 @@
+#team {
+  background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .img-circle {
+    height: 150px;
+    margin-top: 40px;
+    box-shadow: 0 0 5px black;
+  }
+  h3 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-weight: lighter;
+  }
+  .fa-heart {
+    color: red;
+  }
+  a {
+    color: black;
+    opacity: 0.5;
+  }
+}
